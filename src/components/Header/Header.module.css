@@ -1,0 +1,38 @@
+.appHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    height: 100vh;
+}
+
+.bigHeading {
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--title-color);
+}
+
+.secondHeading {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 0.9;
+    color: var(--subtitle-color);
+    margin-bottom: 30px;
+}
+
+.smallHeading {
+    color: var(--button-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary-color);
+    line-height: 1.5;
+}
+
+.btnWrapper {
+    margin-top: 30px;
+}

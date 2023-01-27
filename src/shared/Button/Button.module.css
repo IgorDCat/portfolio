@@ -1,0 +1,17 @@
+.Button {
+    background: none;
+    width: auto;
+    padding: 15px;
+    color: var(--button-color);
+    border: var(--button-color) 1px solid;
+    cursor: pointer;
+}
+
+.Button:hover {
+    opacity: 0.7;
+    background-color: var(--button-bg);
+}
+
+.Button:active {
+    opacity: 1;
+}

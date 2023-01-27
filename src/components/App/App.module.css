@@ -1,0 +1,10 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background: linear-gradient(to right, #232834 , black);*/
+}
+
+.appWrapper {
+    width: 1000px;
+}
