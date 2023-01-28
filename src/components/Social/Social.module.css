@@ -1,0 +1,26 @@
+.Social {
+    position: fixed;
+    left: 0;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    fill: var(--primary-color);
+}
+
+.Social::after,
+.Social::before {
+    content: "";
+    width: 2px;
+    height: 50px;
+    background-color: var(--title-color);
+    display: block;
+    border-radius: 2px;
+    margin: 20px 0;
+}

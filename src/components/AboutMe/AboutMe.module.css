@@ -1,8 +1,9 @@
 .AboutMe {
-    height: 80vh;
+    height: 200px;
     display: flex;
     font-size: 20px;
     width: 800px;
+    align-items: center;
 }
 
 .logo {
@@ -13,7 +14,7 @@
 .animatedLogo {
     width: 200px;
     height: 200px;
-    margin: 30px;
+    margin: 10px 30px;
     animation: App-logo-spin infinite 20s linear;
 }
 
