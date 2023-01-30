@@ -13,6 +13,7 @@
     margin: 10px;
     transform: translateX(0);
     transition: transform .3s;
+    cursor: pointer;
 }
 
 .item:hover {

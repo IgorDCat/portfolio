@@ -58,6 +58,9 @@ code {
     --form-color: rgba(26, 40, 80, 0.6);
     --button-color: #64ffda;
     --button-bg: rgba(13, 37, 31, 0.2);
+    --overlay-color: rgba(0, 0, 0, 0.6);
+
+    --overlay-z-index: -1;
 }
 
 .title {
@@ -75,4 +78,8 @@ code {
     display: block;
     border-radius: 2px;
     margin-bottom: 8px;
+}
+
+.error {
+    color: red;
 }

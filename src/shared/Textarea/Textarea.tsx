@@ -1,24 +1,24 @@
 import React from 'react';
-import cls from './Input.module.css';
+import cls from './Textarea.module.css';
 import {classNames} from '../../helpers/classNames';
 
-type HTMLInputProps = Omit<React.InputHTMLAttributes<HTMLInputElement>, 'value' | 'onChange' | 'placeholder'>
+type HTMLTextareaProps = Omit<React.TextareaHTMLAttributes<HTMLTextAreaElement>, 'value' | 'onChange' | 'placeholder'>
 
-interface InputProps extends HTMLInputProps {
+interface TextareaProps extends HTMLTextareaProps {
     value?: string;
     placeholder?: string;
     onChange: (value: string) => void;
 }
 
-export const Input = (props: InputProps) => {
+export const Textarea = (props: TextareaProps) => {
     const {value = '', onChange, ...otherProps} = props;
 
-    const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const onChangeHandler = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
         onChange(e.currentTarget.value);
     }
 
     return (
-        <input
+        <textarea
             value={value}
             onChange={onChangeHandler}
             className={classNames(cls.Input)}

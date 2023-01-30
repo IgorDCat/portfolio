@@ -1,0 +1,39 @@
+.Modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    visibility: hidden;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    position: relative;
+    border: gray 2px solid;
+    border-radius: 10px;
+    background: var(--bg-color);
+    padding: 20px;
+    transition: transform 0.3s;
+    color: var(--primary-color);
+}
+
+.opened {
+    visibility: visible;
+    pointer-events: all;
+    z-index: 20;
+
+}
+
+.closeBtn {
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+}

@@ -7,7 +7,6 @@
     color: var(--title-color);
     font-size: 20px;
     padding: 20px 40px;
-    z-index: 100;
     background: var(--bg-color);
     width: 100%;
 }

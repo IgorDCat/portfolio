@@ -22,7 +22,9 @@ export const Header = () => {
                 occasionally designing) exceptional digital experiences.
             </div>
             <div className={cls.btnWrapper}>
-                <Button>Get contacts</Button>
+                <a href='#contacts'>
+                    <Button>Get contacts</Button>
+                </a>
             </div>
         </header>
     );

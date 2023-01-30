@@ -4,35 +4,55 @@ import {Input} from '../../shared/Input/Input';
 import {useState} from 'react';
 import {Button} from '../../shared/Button/Button';
 import emailjs from '@emailjs/browser';
+import {Textarea} from '../../shared/Textarea/Textarea';
 
 export const ContactMe = () => {
     const [nameInputValue, setNameInputValue] = useState('');
     const [messageInputValue, setMessageInputValue] = useState('');
+    const [formWarning, setFormWarning] = useState(false);
 
     const onSendMessage = () => {
-        emailjs.send('service_8kaluv1','template_gtqxmak', {
-            from_name: nameInputValue,
-            message: messageInputValue
-        }, 'gdRyytQPiBVY2TyiG')
-            .then((response) => {
-                console.log('SUCCESS!', response.status, response.text);
-                setNameInputValue('');
-                setMessageInputValue('');
-            }, (err) => {
-                console.log('FAILED...', err);
-            });
+        if(nameInputValue !== '' && messageInputValue !== '') {
+            emailjs.send('service_8kaluv1','template_gtqxmak', {
+                from_name: nameInputValue,
+                message: messageInputValue
+            }, 'gdRyytQPiBVY2TyiG')
+                .then((response) => {
+                    console.log('SUCCESS!', response.status, response.text);
+                    setNameInputValue('');
+                    setMessageInputValue('');
+                }, (err) => {
+                    console.log('FAILED...', err);
+                });
+        } else {
+            setFormWarning(true);
+        }
     }
 
     return (
         <div>
-            <p className='title'>Contact me</p>
+            <p className='title' id='contacts'>Contact me</p>
             <div className={cls.contactForm}>
-                <Input value={nameInputValue} onChange={setNameInputValue} placeholder='Your name'/>
-                <Input value={messageInputValue} onChange={setMessageInputValue} placeholder='Your message'/>
-
-                <Button onClick={onSendMessage}>
-                    Send message
-                </Button>
+                <Input
+                    value={nameInputValue}
+                    onChange={setNameInputValue}
+                    placeholder='Your name'
+                    onFocus={() => setFormWarning(false)}
+                />
+                <Textarea
+                    value={messageInputValue}
+                    onChange={setMessageInputValue}
+                    placeholder='Your message'
+                    onFocus={() => setFormWarning(false)}
+                />
+                <div className={cls.btnWrapper}>
+                    <Button onClick={onSendMessage}>
+                        Send message
+                    </Button>
+                    {formWarning && <div className="error">
+                        Please, fill in all the fields
+                    </div>}
+                </div>
             </div>
 
         </div>

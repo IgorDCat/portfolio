@@ -12,7 +12,6 @@ const menuItems = [
 ]
 
 export const MainMenu = () => {
-
     const [scrollPosition, setScrollPosition] = useState(0);
     const [isMenuVisible, setIsMenuVisible] = useState(true);
 
