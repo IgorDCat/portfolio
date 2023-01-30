@@ -1,6 +1,22 @@
 .Experience {
     display: flex;
     height: 400px;
-    width: 800px;
+    width: 80%;
     font-size: 20px;
+}
+
+@media (max-width: 750px){
+    .Experience {
+        flex-direction: column;
+        height: 600px;
+        align-items: center;
+        font-size: 15px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 400px){
+    .Experience {
+        font-size: 12px;
+        height: 400px;
+    }
 }

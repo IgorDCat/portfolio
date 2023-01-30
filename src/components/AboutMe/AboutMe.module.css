@@ -2,18 +2,13 @@
     height: 500px;
     display: flex;
     font-size: 20px;
-    width: 800px;
-}
-
-.logo {
-    width: 100px;
-    height: 100px;
+    width: 80%;
 }
 
 .animatedLogo {
     width: 200px;
     height: 200px;
-    margin: 10px 30px;
+    margin: 10px 20px;
     animation: App-logo-spin infinite 20s linear;
 }
 
@@ -23,5 +18,24 @@
     }
     to {
         transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 750px){
+    .AboutMe {
+        flex-direction: column;
+        font-size: 15px;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 400px){
+    .AboutMe {
+        font-size: 12px;
+        height: 350px;
+    }
+    .animatedLogo {
+        width: 100px;
+        height: 100px;
     }
 }

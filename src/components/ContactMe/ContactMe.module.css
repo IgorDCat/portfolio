@@ -1,6 +1,6 @@
 .contactForm {
     background-color: var(--form-color);
-    width: 800px;
+    width: 90%;
     height: 300px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -15,4 +15,9 @@
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+@media (max-width: 750px){
+    .contactForm {
+    }
 }

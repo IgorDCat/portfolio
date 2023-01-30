@@ -36,3 +36,17 @@
 .btnWrapper {
     margin-top: 30px;
 }
+
+@media (max-width: 900px){
+    .bigHeading, .secondHeading {
+        font-size: 40px;
+    }
+    .smallHeading, .subtitle {
+        font-size: 13px;
+    }
+}
+@media (max-width: 450px){
+    .bigHeading, .secondHeading {
+        font-size: 30px;
+    }
+}

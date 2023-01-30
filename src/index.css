@@ -87,3 +87,22 @@ code {
 .success {
     color: #99fa04;
 }
+
+@media (max-width: 900px){
+    .title {
+        font-size: 30px;
+    }
+    .title::after {
+        width: 350px;
+    }
+}
+@media (max-width: 550px){
+    .title::after {
+        width: 308px;
+    }
+}
+@media (max-width: 400px){
+    .title::after {
+        width: 200px;
+    }
+}
