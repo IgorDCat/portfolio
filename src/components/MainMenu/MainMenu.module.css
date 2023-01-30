@@ -2,6 +2,7 @@
 .hidden {
     display: flex;
     position: fixed;
+    align-items: center;
     gap: 10px;
     color: var(--title-color);
     font-size: 20px;
@@ -20,21 +21,6 @@
     transform: translateY(-100%);
     transition: transform .3s;
 }
-
-@keyframes hideBtn {
-    0% {
-        top: 0
-    }
-    100% {
-        top: -100%;
-    }
-}
-
-.menu--active {
-    transform: translateY(0);
-    transition: transform .5s;
-}
-
 
 .menuItem {
     margin: 15px;

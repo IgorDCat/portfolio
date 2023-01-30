@@ -1,0 +1,12 @@
+.contactForm {
+    background-color: var(--form-color);
+    width: 800px;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.input {
+    margin-bottom: 10px;
+}

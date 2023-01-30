@@ -5,6 +5,7 @@ import {MainMenu} from '../MainMenu/MainMenu';
 import {AboutMe} from '../AboutMe/AboutMe';
 import {Experience} from '../Experience/Experience';
 import {Social} from '../Social/Social';
+import {ContactMe} from '../ContactMe/ContactMe';
 
 export const App = () => {
 
@@ -17,6 +18,7 @@ export const App = () => {
                     <Social/>
                     <AboutMe/>
                     <Experience/>
+                    <ContactMe/>
                 </main>
             </div>
         </>

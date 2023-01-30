@@ -5,7 +5,7 @@ import cls from './Experience.module.css';
 
 export const Experience = () => {
     return (
-        <div className={cls.Experience}>
+        <div className={cls.Experience} id='experience'>
             <img src={ReduxLogo} alt='Redux' className={clsA.animatedLogo}/>
             <div>
                 <p className='title'>Experience</p>

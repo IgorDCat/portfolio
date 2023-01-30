@@ -7,8 +7,8 @@ import {useEffect} from 'react';
 
 const menuItems = [
     {title: 'About me', link: '#aboutMe'},
-    {title: 'Experience', link: ''},
-    {title: 'Contacts', link: ''},
+    {title: 'Experience', link: '#experience'},
+    {title: 'Contacts', link: '#contacts'},
 ]
 
 export const MainMenu = () => {
@@ -33,7 +33,9 @@ export const MainMenu = () => {
 
     return (
         <nav className={isMenuVisible? cls.MainMenu : cls.hidden}>
-            <Button>Resume</Button>
+            <a href='/CV_frontend_dev_Igor_Davydov.pdf' target='_blank' rel="noopener">
+                <Button>Resume</Button>
+            </a>
             {menuItems.map(i => (
                 <a className={cls.menuItem} key={i.title} href={i.link}>
                     {i.title}
