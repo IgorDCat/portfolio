@@ -83,3 +83,7 @@ code {
 .error {
     color: red;
 }
+
+.success {
+    color: #99fa04;
+}
