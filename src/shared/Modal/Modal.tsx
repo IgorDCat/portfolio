@@ -4,6 +4,7 @@ import {classNames} from '../../helpers/classNames';
 import {Mods} from '../../helpers/classNames';
 import {Overlay} from '../Overlay/Overlay';
 import {useModal} from '../../hooks/useModal';
+import {Portal} from '../Portal/Portal';
 
 interface ModalProps {
     className?: string;
@@ -23,12 +24,14 @@ export const Modal = (props: ModalProps) => {
     }
 
     return (
-        <div className={classNames(cls.Modal, mods, [className])}>
-            <Overlay onClick={closeModal}/>
-            <div className={cls.content}>
-                <div className={cls.closeBtn} onClick={onClose}>x</div>
-                {children}
+        <Portal>
+            <div className={classNames(cls.Modal, mods, [className])}>
+                <Overlay onClick={closeModal}/>
+                <div className={cls.content}>
+                    <div className={cls.closeBtn} onClick={onClose}>x</div>
+                    {children}
+                </div>
             </div>
-        </div>
+        </Portal>
     );
 }

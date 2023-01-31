@@ -12,26 +12,30 @@
 
 @media (max-width: 1400px){
     .appWrapper {
-        max-width: 700px;
+        width: 700px;
     }
 }
 @media (max-width: 900px){
     .appWrapper {
-        max-width: 500px;
+        width: 500px;
     }
 }
 @media (max-width: 700px){
     .appWrapper {
-        max-width: 400px;
+        width: 400px;
     }
 }
 @media (max-width: 550px){
+    .app {
+        align-items: flex-start;
+        padding-left: 40px;
+    }
     .appWrapper {
-        max-width: 300px;
+        width: 300px;
     }
 }
 @media (max-width: 450px){
     .appWrapper {
-        max-width: 250px;
+        width: 250px;
     }
 }

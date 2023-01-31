@@ -31,3 +31,11 @@
     border-radius: 2px;
     margin: 20px 0;
 }
+
+@media (max-width: 550px) {
+    .Social {
+        right: 0;
+        left: auto;
+        top: 25%;
+    }
+}

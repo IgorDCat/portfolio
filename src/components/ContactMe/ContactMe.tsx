@@ -39,7 +39,7 @@ export const ContactMe = () => {
     }
 
     return (
-        <div>
+        <div className={cls.ContactMe}>
             <p className='title' id='contacts'>Contact me</p>
             <div className={cls.contactForm}>
                 <Input

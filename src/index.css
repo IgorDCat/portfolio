@@ -55,7 +55,7 @@ code {
     /*--bg-color: #232834;*/
     --bg-color: linear-gradient(90deg, #111d2f 0%, rgba(12, 15, 17, 0.95) 55%, rgba(21, 34, 37, 0.25) 100%);;
     --subtitle-color: #8892b0;
-    --form-color: rgba(26, 40, 80, 0.6);
+    --form-color: rgba(34, 53, 107, 0.6);
     --button-color: #64ffda;
     --button-bg: rgba(13, 37, 31, 0.2);
     --overlay-color: rgba(0, 0, 0, 0.6);
@@ -97,11 +97,6 @@ code {
     }
 }
 @media (max-width: 550px){
-    .title::after {
-        width: 308px;
-    }
-}
-@media (max-width: 400px){
     .title::after {
         width: 200px;
     }
