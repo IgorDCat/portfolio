@@ -8,7 +8,7 @@ import {Modal} from '../../shared/Modal/Modal';
 import {useState} from 'react';
 
 const icons = [
-    {id: 1, icon: GoogleIcon, link: 'mailto:davydof.dev@gmail.com'},
+    {id: 1, icon: GoogleIcon, link: 'mailto:davydov.frontend@gmail.com'},
     {id: 2, icon: LinkedInIcon, link: 'https://linkedin.com/in/igor-davydov'},
     {id: 3, icon: WhatsAppIcon, link: ''},
     {id: 4, icon: TelegramAppIcon, link: ''},

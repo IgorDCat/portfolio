@@ -7,7 +7,7 @@ export const AboutMe = () => {
         <section className={cls.AboutMe} id={'aboutMe'}>
             <div >
                 <p className='title'>About me</p>
-                <p>I’m frontend developer with more than 2 years of work experience.
+                <p>I’m frontend developer with more than 3 years of work experience.
                     I mainly develop with React and Redux.
                 </p><br/>
                 <p>
