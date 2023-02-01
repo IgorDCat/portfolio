@@ -32,7 +32,7 @@ export const MainMenu = () => {
 
     return (
         <nav className={isMenuVisible? cls.MainMenu : cls.hidden}>
-            <a href='/CV_frontend_dev_Igor_Davydov.pdf' target='_blank' rel="noopener">
+            <a href='/CV_frontend_Igor_Davydov.pdf' target='_blank' rel="noopener">
                 <Button>Resume</Button>
             </a>
             {menuItems.map(i => (
